@@ -3,11 +3,11 @@
 </div>
 <div class="page-body">
     <div class="mineContent">
-        <div class="mineHead">
+        <div class="mineHead" ng-click="toLogin();">
             <img src="image/person.png" alt=""/>
-            <div>登录/注册</div>
+            <div>{{userName}}</div>
         </div>
-        <div class="nav">
+        <div class="nav" ng-show="isShow">
             <div>
                 <i class="icon-heart"></i>我的借书架<i class="icon-right-open" style="float: right;"></i>
             </div>

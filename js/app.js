@@ -29,5 +29,25 @@
                     templateUrl: 'view/bookInfo.html',
                     controller: 'bookInfoController'
                 })
+
+                .when('/login' ,{
+                    templateUrl: 'view/login.html',
+                    controller: 'loginController'
+                })
+
+                .when('/search' ,{
+                    templateUrl: 'view/searchPage.html',
+                    controller: 'searchController'
+                })
+
+                .when('/bookLists' ,{
+                    templateUrl: 'view/bookLists.html',
+                    controller: 'bookListsController'
+                })
+
+                .when('/bookCase' ,{
+                    templateUrl: 'view/bookCase.html',
+                    controller: 'bookCaseController'
+                });
         }]);
 })();

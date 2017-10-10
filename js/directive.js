@@ -9,7 +9,13 @@
                 replace: true,
                 templateUrl: 'template/headerMain.html',
                 scope: {
-                    title: '@'
+                    title: '@',
+                    isback: '@'
+                },
+                controller: function($scope){
+                    $scope.pageBack = function(){
+                        history.back();
+                    };
                 }
             };
         })
